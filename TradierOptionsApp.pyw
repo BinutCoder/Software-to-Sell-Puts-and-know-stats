@@ -14,7 +14,7 @@ import math
 class TradierOptionsApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Option Selling Jaume")
+        self.root.title("Option Selling")
         self.root.state('zoomed')  # Ventana maximizada en Windows
         
         # Configurar icono
@@ -23,7 +23,7 @@ class TradierOptionsApp:
         except:
             pass  # Si no encuentra el icono, continuar sin él
         
-        "Poner la Api propia de tu broker"
+        "CHANGE THE URL FROM YOUR BROKER, THE API YOU HAVE THE OPTION ON THE PROGRAM ITSELF"
 
         self.api_token = None  # Se cargará desde config
         self.base_url = "https://api.tradier.com/v1"
@@ -2689,6 +2689,7 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = TradierOptionsApp(root)
     root.mainloop()
+
 
 
 
